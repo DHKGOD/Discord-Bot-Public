@@ -7,8 +7,7 @@ import os
 import music
 
 prefix = '*'
-token = 'ODgwODI0MDIzODYzNDE4OTUw.YSj5TA.6q8w4K3anm_TIGlwcOTOlMdohnk'
-maybottoken = 'ODYyMTc3NzE2MjE2NjYwMDM4.YOUjkg.3VWB02kFWX3Y1l8wEIA28vhHxYI'
+
 
 bot = commands.Bot(command_prefix=prefix)
 bot.remove_command('help')
@@ -34,4 +33,4 @@ for filename in os.listdir('./cmds'):
         bot.load_extension(f'cmds.{filename[:-3]}')
 
 if __name__ == "__main__":
-    bot.run('ODgwODI0MDIzODYzNDE4OTUw.YSj5TA.6q8w4K3anm_TIGlwcOTOlMdohnk')
+    bot.run()
